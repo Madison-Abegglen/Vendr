@@ -1,0 +1,10 @@
+.food img{
+    height: 100px;
+}
+.food{
+    display: flex;
+}
+.food item{
+    margin: 3%;
+    text-align: center;
+}
