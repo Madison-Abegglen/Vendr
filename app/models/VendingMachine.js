@@ -53,7 +53,7 @@ class VendingMachine {
         //return item.img
     }
 
-    getRemainder(num) {
+    getRemainder() {
         return this.transactionTotal
     }
 

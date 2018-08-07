@@ -25,8 +25,8 @@ class VendService {
         return vendItem
     }
 
-    getRemainder(num) {
-        let remainder = vendingMachine.getRemainder(num);
+    getRemainder() {
+        let remainder = vendingMachine.getRemainder();
         return remainder;
     }
 }
