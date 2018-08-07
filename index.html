@@ -6,39 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vendr</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <main>
-        <div class="food">
-            <div class="food-item">
-                <img src="images/fritos-spicy-jalapeno.png" alt="">
-                <p>PRICE PLACEHOLDER</p>
-            </div>
-            <div class="food-item">
-                <img src="images/cool-ranch.jpg" alt="">
-                <p>PRICE PLACEHOLDER</p>
-            </div>
-            <div class="food-item">
-                <img src="images/bbq-chippies.webp" alt="">
-                <p>PRICE PLACEHOLDER</p>
-            </div>
-            <div class="food-item">
-                <img src="images/sprite.png" alt="">
-                <p>PRICE PLACEHOLDER</p>
-            </div>
+    <main class="container-fluid">
+        <div class="row d-flex justify-content-center food" id="food">
         </div>
-        <div class="money">
-            <button>$0.25</button>
-            <button>$0.10</button>
-            <button>$0.05</button>
+        <div class="row d-flex justify-content-center money">
+            <button class="col-sm-2 btn btn-primary" onclick="app.controllers.vendController.addMoney('quarter')">$0.25</button>
+            <button class="col-sm-2 btn btn-primary" onclick="app.controllers.vendController.addMoney('dime')">$0.10</button>
+            <button class="col-sm-2 btn btn-primary" onclick="app.controllers.vendController.addMoney('nickel')">$0.05</button>
         </div>
-        <div class="total">
+        <div class="row d-flex justify-content-center total">
             <p>Change:
-                <span id="change">$0.00</span>
+                <span id="total">$0.00</span>
             </p>
         </div>
     </main>
+
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>
